@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'Adam';
+            src:    url({{asset('assets/css/adam.otf')}}) format('opentype');
+        }
+    </style>
+
+</head>
+<body>
+<header class="header">
+    <div class="top">
+        <img src="{{ asset('assets/img/logo_1000.png') }}" alt="" class="logo">
+        <div class="links">
+            <a href="{{ path ('home') }}"> HOME</a>
+            <a href="{{ path ('articles') }}"> BOUTIQUE</a>
+            <a href="{{ path ('trot') }}"> GATEAUX</a>
+            <a href="{{ path ('cgv') }}"> MAP</a>
+            {#<a href="{{ path ('focus') }}"> FOCUS</a>#}
+        </div>
+    </div>
+    <hr class="hr">
+</header>
+<main>
+        <div class="content_all">
+
+            <div class="content_block">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="{{ path ('home') }}"> HOME</a></li>
+                    <li><a href="{{ path ('trot') }}"> BOUTIQUE</a></li>
+                    <li><a href="{{ path ('cgv') }}"> MAP</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+</main>
+
+<footer class="foot">
+    <div class="footText">
+        <p> Qui sommes-nous?</p>
+        <a href="{{ path ('cgv') }}">CGV</a>
+        <img src="{{ asset('assets/img/logo_1000.png') }}" alt="" class="logoFoot">
+        <p> FAQ</p>
+        <p> Contact</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base/sidebar.html.twig' %}
+
+     {% block content %}
+
+        <div class="articles_all">
+            {#je rajoute la key id à ma boucle#}
+            {% for id, article in articles %}
+                <div class="cadre">
+                    <p class="article_title">{{ article.title }}</p>
+                    <div  class="image">
+                        {#j'integre mon id en paramètre de la fonction PATH#}
+                        {# PATH/ 2 paramètres existent dans la fonction PATH
+                        la première-> correspond au name de la route
+                        la deuxième-> correspond au nom de la wildcard qui est '' et :sa valeur#}
+                        {#j'appelle la route qui a pour nom 'focus' avec son paramètre 'id'qui correspond ici à la key de l'article#}
+                        <a href="{{ path('focus', {'id': id}) }}"><img src="{{ article.image }}" alt="">Voir plus</a>
+                    </div>
+                    <p class="content">{{ article.content }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    {% endblock %}
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'Adam';
+            src:    url({{asset('assets/css/adam.otf')}}) format('opentype');
+        }
+    </style>
+
+</head>
+<body>
+<header class="header">
+    <div class="top">
+        <img src="{{ asset('assets/img/logo_1000.png') }}" alt="" class="logo">
+        <div class="links">
+            <a href="{{ path ('home') }}"> HOME</a>
+            <a href="{{ path ('articles') }}"> ARTICLES</a>
+            <a href="{{ path ('focus') }}"> FOCUS</a>
+        </div>
+    </div>
+    <hr class="hr">
+</header>
+<main>
+    <div>
+        <h1 class="titre"> le chocolat </h1>
+        <div class="img-home">
+            <img src="{{ asset('assets/img/imgHome.jpg') }}" alt="">
+        </div>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Delectus deleniti excepturi iste quibusdam.<br>
+            Aliquam atque beatae culpa incidunt nam natus nemo officia voluptate.<br>
+            Alias, enim iure labore laudantium neque quisquam?</p>
+    </div>
+
+    <div class="article">
+        {% for article in articles %}
+            <div class="cadre">
+                {{ article.title }}
+                <div  class="image"><img src="{{ article.image }}" alt=""></div>
+                {{ article.content }}
+            </div>
+        {% endfor %}
+    </div>
+</main>
+
+<footer class="foot">
+
+</footer>
+</body>
+</html>
+
+
+
+
+

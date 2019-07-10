@@ -1,0 +1,21 @@
+{% extends 'base/sidebar.html.twig' %}
+
+     {% block content %}
+
+        <div class="cgv">
+
+            {% if lang == 'fr' %}
+                <h1 class="cgv_title">CGV FR</h1>
+            {% elseif lang == 'en' %}
+                <h1 class="cgv_title">CGV EN</h1>
+            {% else %}
+                <h1 class="cgv_title">CVG</h1>
+            {% endif %}
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                Accusamus amet, animi autem consequatur consequuntur doloribus <br>
+                eligendi expedita fuga impedit in iusto necessitatibus odio officiis, placeat quam quia sed ut veritatis!</p>
+            <iframe class="iframe" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.207049454749!2d-1.5729033!3d47.2125309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0fcda6c4cb%3A0xd620ca38dafa1e9a!2s588+Cours+De+la+Libération%2C+33400+Talence!5e0!3m2!1sfr!2sfr!4v1423244007186" width="1000" height="450" frameborder="0"></iframe>
+        </div>
+
+     {% endblock %}

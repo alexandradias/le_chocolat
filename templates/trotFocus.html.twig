@@ -1,0 +1,18 @@
+{% extends 'base/sidebar.html.twig' %}
+
+     {% block content %}
+
+            <div class="article_solo">
+                <div class="cadre-gd">
+                    <p class="article_title">{{ product.title }}</p>
+                    <div  class="image"><img src="{{ product.image }}" alt=""></div>
+                    <p class="content">{{ product.content }}</p>
+                </div>
+            </div>
+
+     {% endblock %}
+
+
+
+
+

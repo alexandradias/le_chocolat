@@ -1,0 +1,39 @@
+{% extends 'base/sidebar.html.twig' %}
+
+     {% block content %}
+
+        <div>
+            <h1 class="titre"> le chocolat </h1>
+            <div class="img-home">
+                <img src="{{ asset('assets/img/imgHome.jpg') }}" alt="">
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                Delectus deleniti excepturi iste quibusdam.<br>
+                Aliquam atque beatae culpa incidunt nam natus nemo officia voluptate.<br>
+                Alias, enim iure labore laudantium neque quisquam?</p>
+        </div>
+
+        <div class="article">
+            {% for id, article in articles %}
+                <div class="cadre">
+                    <a href="{{ path('focus', {'id': id}) }}">
+                        <p class="article_title">{{ article.title }}</p>
+                        <div  class="image"><img src="{{ article.image }}" alt=""></div>
+                        <p class="content">{{ article.content }}</p>
+                        Voir plus</a>
+                </div>
+            {% endfor %}
+        </div>
+     {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

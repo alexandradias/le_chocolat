@@ -1,0 +1,18 @@
+{% extends 'base/sidebar.html.twig' %}
+
+     {% block content %}
+
+            <div class="articles_all">
+                {% for product in products %}
+                    <div class="cadre" >
+                        <a href="{{ path('trotFocus', {'id': product.id }) }}">
+                            <p class="article_title">{{ product.title }}</p>
+                            <div class="image"><img src="{{ product.image }}" alt=""></div>
+                            <p class="content">{{ product.content }}</p>
+                            Voir plus
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+
+     {% endblock %}

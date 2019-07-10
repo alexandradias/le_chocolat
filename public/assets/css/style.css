@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Adam';
+    src: url('');
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.header{
+    height: 200px;
+    width: 100vw;
+    background-color: rgba(186,184,70,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    font-family: Adam, Helvetica, sans-serif;
+}
+
+.links{
+    width:75%;
+    display:flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links a:visited  {
+    color: #788923;
+
+}
+
+.links a:hover{
+    color: #FF727B;
+}
+
+.hr{
+    padding:0;
+    margin:0;
+    color: rgba(186,184,70,0.7);
+}
+
+.foot{
+    height: 100px;
+    width: 100vw;
+    background-color: rgba(186,184,70,0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footText{
+    width:90%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Adam, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 15%;
+    padding: 30px;
+}
+
+.logoFoot{
+    width: 10%;
+}
+
+img{
+    width: 100%;
+}
+
+.img-home {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+.text{
+    text-align: center;
+    font-family: Adam, Helvetica, sans-serif;
+    margin:30px;
+}
+
+.titre{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 30px;
+    font-family: Adam, Helvetica, sans-serif;
+}
+
+.image{
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    width: 90%;
+}
+
+.cadre{
+    width:30%;
+    margin: 0 auto;
+    text-align:center;
+    font-family: Adam, Helvetica, sans-serif;
+}
+
+.cadre_gd{
+    width:100%;
+    margin: 0 auto;
+    text-align:center;
+    font-family: Adam, Helvetica, sans-serif;
+}
+
+.article_title{
+    margin:40px;
+    font-size:20px;
+}
+
+.article{
+    margin-top: 90px;
+    display:flex;
+    justify-content: space-around;
+    font-family: Adam, Helvetica, sans-serif;
+}
+.articles_all{
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: space-around;
+    font-family: Adam, Helvetica, sans-serif;
+}
+.article_all a:visited{
+
+}
+
+.article_solo{
+    display:flex;
+    margin: 0 auto;
+    width: 80%;
+    font-family: Adam, Helvetica, sans-serif;
+}
+
+.content{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px;
+    text-align:center;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+/*____________________________________________________________________________*/
+/* CGV */
+
+.cgv{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    font-family: Adam, Helvetica, sans-serif;
+}
+.cgv_title{
+    letter-spacing: 30px;
+    text-align: center;
+}
+
+.iframe{
+    margin: 80px;
+}
+
+/*____________________________________________________________________________*/
+/* SIDEBAR */
+
+.sidebar {
+    /*height: calc(100vh - 150px);*/
+    height: 80px;
+    width: 15%;
+    background-color: rgba(186,184,70,0.1);
+    font-family: Adam, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    display:flex;
+    position:fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.content_block{
+    width:85%;
+}
+
+.sidebar a:hover {
+    color: #FF727B;
+
+}
+
+.sidebar li a:visited {
+    color:  #788923;
+
+}
+
+.content_all{
+    display:flex;
+}
+
+/*____________________________________________________________________________*/
